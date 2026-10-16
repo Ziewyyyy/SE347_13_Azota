@@ -1,0 +1,23 @@
+node_modules/
+npm-debug.log
+yarn-error.log
+#IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+# Git
+.git/
+.gitignore
+#Environment files
+.env
+.env.*
+!.env.example
+#Documentation & Logs
+*.md
+!README.md
+*.log
+logs/
+#Docker files
+Dockerfile
+docker-compose*.yml
