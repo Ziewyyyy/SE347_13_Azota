@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const authRoutes = require('./routes/auth.routes');
+const errorHandler = require('./middlewares/error.middleware');
 
 const app = express();
 
@@ -19,5 +21,9 @@ app.get('/health', (req, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+app.use('/api/v1/auth', authRoutes);
+
+app.use(errorHandler);
 
 module.exports = app;

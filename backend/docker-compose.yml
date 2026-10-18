@@ -29,12 +29,10 @@ services:
     depends_on:
       postgres-db:
         condition: service_healthy
-    environment:
-      - PORT=${PORT:-5000}
-      - NODE_ENV=${NODE_ENV:-development}
-      - DATABASE_URL=${DATABASE_URL}
-      - JWT_SECRET=${JWT_SECRET}
-      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN}
+    env_file:
+      - .env
+    volumes:
+      - ./src:/app/src
 
 volumes:
   azota_postgres_data:
