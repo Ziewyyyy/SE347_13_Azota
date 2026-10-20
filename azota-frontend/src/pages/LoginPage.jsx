@@ -107,8 +107,12 @@ export default function LoginPage() {
               <p className="error-message">{error}</p>
             )}
 
-            <button type="submit" className="login-button">
-              Đăng nhập
+            <button
+              type="submit"
+              className="login-button"
+              disabled={loading}
+            >
+              {loading ? "Đang đăng nhập..." : "Đăng nhập"}
             </button>
           </form>
         </div>
