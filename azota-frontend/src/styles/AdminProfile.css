@@ -1,0 +1,213 @@
+
+.ap-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #111827;
+  font-family: Arial, sans-serif;
+}
+
+.ap-page > h1 {
+  font-size: 28px;
+  margin: 0 0 24px;
+}
+
+.ap-identity {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.ap-avatar {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #9ca3af;
+  border-radius: 50%;
+}
+
+.ap-identity h2 {
+  margin: 0 0 8px;
+  font-size: 19px;
+}
+
+.ap-role {
+  display: inline-block;
+  color: #2563eb;
+  background: #eff6ff;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.ap-card {
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  padding: 20px;
+}
+
+.ap-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.ap-card-header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.ap-edit-btn,
+.ap-password-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #9ca3af;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.ap-card form,
+.ap-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ap-card label,
+.ap-modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ap-card input,
+.ap-modal input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+}
+
+.ap-card input:disabled {
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.ap-two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.ap-status-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ap-status-label {
+  font-size: 13px;
+}
+
+.ap-active {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  color: #16a34a;
+  font-size: 13px;
+}
+
+.ap-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.ap-form-actions button {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+.ap-form-actions .ap-primary {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.ap-error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.ap-success {
+  color: #15803d;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.ap-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #0007;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.ap-modal {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.ap-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.ap-modal-header h2 {
+  font-size: 21px;
+  margin: 0;
+}
+
+.ap-modal-header button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .ap-two-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .ap-status-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

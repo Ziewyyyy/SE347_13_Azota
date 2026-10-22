@@ -1,0 +1,290 @@
+
+@import "./UserManagement.css";
+
+/* Student Management - same design as User Management */
+
+.sm-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #111827;
+  font-family: Arial, sans-serif;
+}
+
+.sm-heading,
+.sm-filters,
+.sm-actions,
+.sm-modal-header,
+.sm-modal-footer {
+  display: flex;
+}
+
+.sm-heading {
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sm-heading h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.sm-heading p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 8px;
+}
+
+.sm-count {
+  font-size: 21px;
+}
+
+.sm-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 9px;
+  padding: 12px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sm-panel {
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  padding: 16px;
+  min-height: 300px;
+}
+
+.sm-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 0 12px;
+  height: 44px;
+  color: #9ca3af;
+}
+
+.sm-search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  background: transparent;
+}
+
+.sm-filters {
+  gap: 25px;
+  margin-top: 12px;
+  margin-bottom: 28px;
+}
+
+.sm-filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sm-filters label {
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.sm-filters select {
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 8px 10px;
+  background: white;
+  font-size: 12px;
+}
+
+.sm-table-wrapper {
+  overflow-x: auto;
+}
+
+.sm-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sm-table th {
+  padding: 18px 12px;
+  border-bottom: 1px solid #9ca3af;
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.sm-table td {
+  padding: 19px 12px;
+  border-bottom: 1px solid #a3a3a3;
+  font-size: 13px;
+}
+
+.sm-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.sm-status {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sm-status.active {
+  color: #22c55e;
+}
+
+.sm-status.locked {
+  color: #ef4444;
+}
+
+.sm-actions {
+  align-items: center;
+  gap: 14px;
+}
+
+.sm-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  background: none;
+  border: none;
+  color: #111;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sm-actions button:hover {
+  background: #e5e7eb;
+}
+
+.sm-empty {
+  text-align: center;
+  color: #9ca3af;
+  padding: 35px !important;
+}
+
+.sm-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.sm-modal {
+  width: 100%;
+  max-width: 460px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.sm-modal-header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sm-modal-header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.sm-modal-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sm-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sm-modal form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sm-modal input,
+.sm-modal form select {
+  width: 100%;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.sm-modal-footer {
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.sm-modal-footer button {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.sm-modal-footer .sm-primary {
+  background: #111827;
+  color: white;
+  border-color: #111827;
+}
+
+.sm-error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.sm-details {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .sm-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sm-heading h1 {
+    font-size: 24px;
+  }
+
+  .sm-filters {
+    flex-wrap: wrap;
+  }
+}

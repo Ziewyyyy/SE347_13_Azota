@@ -1,0 +1,271 @@
+
+.tm-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #111827;
+  font-family: Arial, sans-serif;
+}
+
+.tm-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.tm-heading h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.tm-heading p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 8px;
+}
+
+.tm-count {
+  font-size: 21px;
+}
+
+.tm-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tm-panel {
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  padding: 16px;
+  min-height: 300px;
+}
+
+.tm-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  color: #9ca3af;
+}
+
+.tm-search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+.tm-filters {
+  display: flex;
+  gap: 25px;
+  margin: 12px 0 28px;
+}
+
+.tm-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.tm-filters select {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  background: white;
+  font-size: 12px;
+}
+
+.tm-table-wrapper {
+  overflow-x: auto;
+}
+
+.tm-table {
+  width: 100%;
+  min-width: 580px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.tm-table th {
+  padding: 18px 12px;
+  border-bottom: 1px solid #9ca3af;
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.tm-table td {
+  padding: 19px 12px;
+  border-bottom: 1px solid #a3a3a3;
+  font-size: 13px;
+}
+
+.tm-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.tm-status.active {
+  color: #22c55e;
+}
+
+.tm-status.locked {
+  color: #ef4444;
+}
+
+.tm-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tm-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #111827;
+  cursor: pointer;
+}
+
+.tm-actions button:hover {
+  background: #e5e7eb;
+}
+
+.tm-empty {
+  text-align: center;
+  padding: 35px !important;
+  color: #9ca3af;
+}
+
+.tm-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #0007;
+}
+
+.tm-modal {
+  width: 100%;
+  max-width: 460px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 20px 50px #0002;
+}
+
+.tm-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.tm-modal-header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.tm-modal-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tm-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tm-modal form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.tm-modal input,
+.tm-modal form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+}
+
+.tm-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.tm-modal-footer button {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+.tm-modal-footer .tm-primary {
+  background: #111827;
+  border-color: #111827;
+  color: white;
+}
+
+.tm-error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.tm-details {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .tm-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tm-heading h1 {
+    font-size: 24px;
+  }
+
+  .tm-filters {
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,272 @@
+﻿
+.sub-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #111827;
+  font-family: Arial, sans-serif;
+}
+
+.sub-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.sub-heading h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+
+.sub-heading p {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0 0 8px;
+}
+
+.sub-count {
+  font-size: 21px;
+}
+
+.sub-add-btn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #000;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sub-panel {
+  background: #fff;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  padding: 16px;
+  min-height: 300px;
+}
+
+.sub-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  color: #9ca3af;
+}
+
+.sub-search-box input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 13px;
+}
+
+.sub-filters {
+  display: flex;
+  gap: 25px;
+  margin: 12px 0 28px;
+}
+
+.sub-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.sub-filters select {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  background: white;
+  font-size: 12px;
+}
+
+.sub-table-wrapper {
+  overflow-x: auto;
+}
+
+.sub-table {
+  width: 100%;
+  min-width: 580px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.sub-table th {
+  padding: 18px 12px;
+  border-bottom: 1px solid #9ca3af;
+  font-size: 13px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.sub-table td {
+  padding: 19px 12px;
+  border-bottom: 1px solid #a3a3a3;
+  font-size: 13px;
+}
+
+.sub-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.sub-status.active {
+  color: #22c55e;
+}
+
+.sub-status.inactive {
+  color: #ef4444;
+}
+
+.sub-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sub-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  color: #111827;
+  cursor: pointer;
+}
+
+.sub-actions button:hover {
+  background: #e5e7eb;
+}
+
+.sub-empty {
+  text-align: center;
+  padding: 35px !important;
+  color: #9ca3af;
+}
+
+.sub-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #0007;
+}
+
+.sub-modal {
+  width: 100%;
+  max-width: 460px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 20px 50px #0002;
+}
+
+.sub-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.sub-modal-header h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.sub-modal-header button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sub-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sub-modal form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sub-modal input,
+.sub-modal form select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  font-size: 14px;
+}
+
+.sub-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.sub-modal-footer button {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+.sub-modal-footer .sub-primary {
+  background: #111827;
+  border-color: #111827;
+  color: white;
+}
+
+.sub-error {
+  color: #dc2626;
+  font-size: 13px;
+}
+
+.sub-details {
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .sub-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sub-heading h1 {
+    font-size: 24px;
+  }
+
+  .sub-filters {
+    flex-wrap: wrap;
+  }
+}
+

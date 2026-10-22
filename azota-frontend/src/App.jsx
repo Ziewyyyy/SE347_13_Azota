@@ -16,6 +16,13 @@ import LoginPage from "./pages/LoginPage";
 // Admin
 import AdminLayout from "./layouts/AdminLayout";
 import AdminDashboard from "./pages/admin/AdminDashboard";
+import UserManagement from "./pages/admin/UserManagement";
+import StudentManagement from "./pages/admin/StudentManagement";
+import TeacherManagement from "./pages/admin/TeacherManagement";
+import SubjectManagement from "./pages/admin/SubjectManagement";
+import ClassManagement from "./pages/admin/ClassManagement";
+import ActivityLogs from "./pages/admin/ActivityLogs";
+import AdminProfile from "./pages/admin/AdminProfile";
 
 // Student
 import StudentLayout from "./layouts/StudentLayout";
@@ -171,32 +178,37 @@ export default function App() {
 
               <Route
                 path="users"
-                element={<AdminPlaceholder />}
+                element={<UserManagement />}
               />
 
               <Route
                 path="students"
-                element={<AdminPlaceholder />}
+                element={<StudentManagement />}
               />
 
               <Route
                 path="teachers"
-                element={<AdminPlaceholder />}
+                element={<TeacherManagement />}
               />
 
               <Route
                 path="subjects"
-                element={<AdminPlaceholder />}
+                element={<SubjectManagement />}
               />
 
               <Route
                 path="classes"
-                element={<AdminPlaceholder />}
+                element={<ClassManagement />}
               />
 
               <Route
                 path="logs"
-                element={<AdminPlaceholder />}
+                element={<ActivityLogs />}
+              />
+
+              <Route
+                path="profile"
+                element={<AdminProfile />}
               />
             </Route>
           </Route>

@@ -1,0 +1,187 @@
+
+.al-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  color: #111827;
+}
+
+.al-heading {
+  margin-bottom: 30px;
+}
+
+.al-heading h1 {
+  margin: 0 0 18px;
+  font-size: 28px;
+}
+
+.al-heading p {
+  color: #9ca3af;
+  font-size: 13px;
+  margin: 0 0 8px;
+}
+
+.al-heading strong {
+  font-size: 21px;
+}
+
+.al-panel {
+  background: white;
+  border: 1px solid #c9c9c9;
+  border-radius: 7px;
+  padding: 16px;
+  min-height: 300px;
+}
+
+.al-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 44px;
+  border: 1px solid #c9c9c9;
+  border-radius: 5px;
+  padding: 0 12px;
+}
+
+.al-search input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.al-filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 15px;
+  margin: 14px 0 28px;
+}
+
+.al-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 12px;
+  color: #4b5563;
+}
+
+.al-filters select,
+.al-filters input {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  background: white;
+  font-size: 12px;
+}
+
+.al-clear {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+.al-scroll {
+  overflow-x: auto;
+}
+
+.al-table {
+  width: 100%;
+  min-width: 650px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.al-table th {
+  padding: 16px 10px;
+  border-bottom: 1px solid #999;
+  font-size: 12px;
+  font-weight: 400;
+  color: #808080;
+}
+
+.al-table td {
+  padding: 17px 10px;
+  border-bottom: 1px solid #aaa;
+  font-size: 12px;
+}
+
+.al-action.CREATE { color: #16a34a; }
+.al-action.UPDATE { color: #2563eb; }
+.al-action.LOGIN { color: #64748b; }
+.al-action.LOCK { color: #dc2626; }
+
+.al-view {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.al-view:hover {
+  background: #f1f5f9;
+  border-radius: 5px;
+}
+
+.al-empty {
+  padding: 35px !important;
+  text-align: center;
+  color: #94a3b8;
+}
+
+.al-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #0007;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.al-modal {
+  width: 100%;
+  max-width: 460px;
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  font-size: 14px;
+}
+
+.al-modal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.al-modal-head h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.al-modal-head button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.al-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.al-modal-footer button {
+  padding: 10px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
